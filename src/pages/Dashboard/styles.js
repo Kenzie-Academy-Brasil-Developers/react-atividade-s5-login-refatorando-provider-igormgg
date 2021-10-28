@@ -20,7 +20,8 @@ export const DashboardContainer = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0px 0px 50px 5px black;
-    animation: logoutContainer 3s 1 ease-in-out;
+    transform: scale(0.9);
+    animation: pulse 1s infinite;
 
     :hover {
       cursor: pointer;
@@ -31,6 +32,23 @@ export const DashboardContainer = styled.div`
   @keyframes logoutContainer {
     from {
       opacity: 0;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
   }
 `;
