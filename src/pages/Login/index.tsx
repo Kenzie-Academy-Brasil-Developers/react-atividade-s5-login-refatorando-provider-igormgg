@@ -44,7 +44,7 @@ const Login = () => {
           <input
             {...register("password")}
             placeholder="Digite sua senha"
-            type="text"
+            type="password"
           />
           <label>{errors.password?.message}</label>
         </div>
