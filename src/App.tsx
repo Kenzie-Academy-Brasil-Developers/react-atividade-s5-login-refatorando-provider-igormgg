@@ -1,5 +1,6 @@
 import "./reset.css";
 import "./App.css";
+import Routes from "./routes";
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
       <header className="App-header">
         <h1>Login + Refatorando Provider</h1>
       </header>
-      <main></main>
+      <main>
+        <Routes />
+      </main>
     </div>
   );
 }
